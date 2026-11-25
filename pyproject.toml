@@ -1,0 +1,25 @@
+[project]
+name = "mineria-energia"
+version = "0.1.0"
+description = "Predicción y segmentación del consumo energético de electrodomésticos (UCI Appliances Energy Prediction)"
+readme = "README.md"
+authors = [
+    { name = "PokyDev", email = "andressocha.correo@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "jupyterlab>=4.6.6",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "ucimlrepo>=0.0.7",
+]
+
+[project.scripts]
+mineria-energia = "mineria_energia:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
